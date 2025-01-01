@@ -1,0 +1,78 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+@import url(https://db.onlinewebfonts.com/c/546bf035c4157cefd15badf39f015115?family=Foundry+Gridnik+W03+ExtraBold);
+@font-face {
+    font-family: Valorant;
+    src: url(font/valorant/Valorant\ Font.ttf);
+}
+@import "_var-mix";
+@import "_navbar";
+@import "_hero-section";
+@import "_esport-section";
+@import "_map-section";
+@import "_agents-section";
+@import "_team";
+
+
+*{
+    color: white;
+    font-family: Garet;
+}
+
+:root{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: $val-red;
+    color: $val-blue;
+}
+
+::-webkit-scrollbar-thumb{
+    background: $val-red;
+}
+
+::-webkit-scrollbar{
+    width: 0.1rem;
+}
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(15,15,15);
+    overflow-x: hidden;
+
+    
+    
+}
+
+
+
+
+.blank{
+    width: $nav-width;
+}
+
+footer {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    margin: 10rem 0 5rem 0;
+
+    p{
+    border-top: white solid 1px;
+    padding-top: 3rem;
+    width: 50vw;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    :root{
+        font-size: 14px;
+    }
+  }

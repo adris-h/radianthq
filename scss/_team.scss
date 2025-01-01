@@ -1,0 +1,103 @@
+.t-nav{
+    i{
+        font-size: 2rem;
+        transition: 300ms;
+    }
+    i:hover{
+        transform: scale(1.2);
+    }
+}
+
+body>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Garet;
+    padding: 6rem;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    *{
+        /*border: 1px solid white; */
+        margin: 0;
+    }
+
+    .team-logo>img{
+        width: 20rem;
+    }
+
+    .flag{
+        width: 2rem;
+    }
+
+}
+
+.team-container>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    width: 50%;
+
+    .team-title{
+        font-size: 4rem;
+        font-family: Garet-Heavz;
+    }
+
+    .t-location{
+        display: flex;
+        margin-left: 3px;
+        gap: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .staff-holder{
+        display: flex;
+        gap: .5rem;
+        div{
+
+            .staff-img{
+                width: 3rem;
+            }
+        
+            p{
+                margin: 0;
+                font-size: 1.5rem;
+            }
+        }
+
+        div>div{
+            display: flex;
+            flex-direction: column;
+
+            p:nth-child(2){
+                color: rgba(255, 255, 255, 0.211);
+                font-size: 1rem;
+                border-radius: 5px;
+                padding: 2px;
+            }
+        }
+    }
+
+    .staff-holder>div{
+        display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: .5rem;
+    }
+}
+
+.roster-container{
+    display: flex;
+    justify-content: center;
+    h2{
+        font-family: Garet-Heavz;
+    }
+}
+
+
+

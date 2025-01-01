@@ -1,0 +1,71 @@
+.hero-section{
+    .hero-background{
+        @include center-all-flexbox();
+        @include width-height(100vw, 100vh);
+        width: 100vw;
+        height: 100vh;
+        background-image: url(96bf8b4585705c8a1160ab13f38d10d8665e91b4-1920x1080.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+     .hero-background:before{
+        content: '';
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:100%;
+        height:100vh;
+        background: linear-gradient(rgba(15, 15, 15, 0.733), rgb(15, 15, 15));
+        z-index: 0;
+    }
+
+    
+    p{
+        font-family: Valorant;
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: $val-red;
+        /*text-shadow: 0px 10px 10px rgba(0,0,0,0.56);*/
+        position: absolute;
+    }
+
+    .object-container{
+        @include width-height(100vw, 100vh);
+        div{
+            background-color: $val-red;
+        }
+
+        div:nth-child(1){
+            @include width-height(1rem, 1rem);
+            transform: translate(20vw, 10vh);
+        }
+
+        div:nth-child(2){
+            @include width-height(1.5rem, 1.5rem);
+            transform: translate(40vw, 80vh);
+        }
+
+        div:nth-child(3){
+            @include width-height(1rem, 1rem);
+            transform: translate(10vw, 70vh);
+            border: solid $val-red 1px;
+            background-color: #0f192200;
+        }
+
+        div:nth-child(4){
+            @include width-height(1rem, 1rem);
+            transform: translate(70vw, 20vh);
+            border: solid $val-red 1px;
+            background-color: #0f192200;
+        }
+
+        div:nth-child(5){
+            @include width-height(1.5rem, 1.5rem);
+            transform: translate(90vw, 70vh);
+            border: solid $val-red 1px;
+            background-color: #0f192200;
+        }
+    }
+}

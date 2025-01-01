@@ -1,0 +1,51 @@
+
+nav{
+    position: fixed;
+    margin: 1rem;
+    z-index: 1000;
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.808);
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    a i{
+        margin-right: 5px
+    }
+
+    .vertical-nav{
+        @include flexbox-layout(column, space-between, center, 1rem );
+        @include width-height($nav-width, 90vh);
+
+        padding-left: 0;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .logo img{
+            width: 2rem;
+            height: 2rem;
+        }
+
+        border-right: 1px rgba(255, 255, 255, 0.034) solid;
+
+        i{
+            font-size: 1.2rem;
+            color: $unselected;
+            transition: 500ms;
+        }
+
+        i:hover{
+            color: white;
+            transform: scale(1.2)
+        }
+
+
+        .icons{
+            @include flexbox-layout(column, center, center, 1rem );
+            @include width-height(10vw, 100vh);
+            
+        }
+    }
+}

@@ -1,0 +1,708 @@
+@import url("https://fonts.cdnfonts.com/css/valorant");
+@import url(https://db.onlinewebfonts.com/c/546bf035c4157cefd15badf39f015115?family=Foundry+Gridnik+W03+ExtraBold);
+@font-face {
+  font-family: Valorant;
+  src: url(font/valorant/Valorant\ Font.ttf);
+}
+@font-face {
+  font-family: Garet;
+  src: url(../font/garet/Garet-Book.ttf);
+}
+@font-face {
+  font-family: Garet-Heavz;
+  src: url(../font/garet/Garet-Heavy.ttf);
+}
+nav {
+  position: fixed;
+  margin: 1rem;
+  z-index: 1000;
+}
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.808);
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+nav a i {
+  margin-right: 5px;
+}
+nav .vertical-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 5vw;
+  height: 90vh;
+  padding-left: 0;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-right: 1px rgba(255, 255, 255, 0.034) solid;
+}
+nav .vertical-nav .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+nav .vertical-nav i {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.776);
+  transition: 500ms;
+}
+nav .vertical-nav i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+nav .vertical-nav .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 10vw;
+  height: 100vh;
+}
+
+.hero-section .hero-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(96bf8b4585705c8a1160ab13f38d10d8665e91b4-1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.hero-section .hero-background:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(15, 15, 15, 0.733), rgb(15, 15, 15));
+  z-index: 0;
+}
+.hero-section p {
+  font-family: Valorant;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #FF4457;
+  /*text-shadow: 0px 10px 10px rgba(0,0,0,0.56);*/
+  position: absolute;
+}
+.hero-section .object-container {
+  width: 100vw;
+  height: 100vh;
+}
+.hero-section .object-container div {
+  background-color: #FF4457;
+}
+.hero-section .object-container div:nth-child(1) {
+  width: 1rem;
+  height: 1rem;
+  transform: translate(20vw, 10vh);
+}
+.hero-section .object-container div:nth-child(2) {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(40vw, 80vh);
+}
+.hero-section .object-container div:nth-child(3) {
+  width: 1rem;
+  height: 1rem;
+  transform: translate(10vw, 70vh);
+  border: solid #FF4457 1px;
+  background-color: rgba(15, 25, 34, 0);
+}
+.hero-section .object-container div:nth-child(4) {
+  width: 1rem;
+  height: 1rem;
+  transform: translate(70vw, 20vh);
+  border: solid #FF4457 1px;
+  background-color: rgba(15, 25, 34, 0);
+}
+.hero-section .object-container div:nth-child(5) {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(90vw, 70vh);
+  border: solid #FF4457 1px;
+  background-color: rgba(15, 25, 34, 0);
+}
+
+.esport-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 0 5rem 0;
+}
+.esport-section .tournaments-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  border-radius: 1rem;
+  /*border: solid 1px white;*/
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.esport-section .tournaments-container .vct-img {
+  width: 16rem;
+}
+.esport-section .tournaments-container img {
+  width: 15rem;
+}
+.esport-section .tournaments-container a {
+  transition: 500ms;
+}
+.esport-section .tournaments-container a:hover {
+  transform: scale(1.2);
+}
+.esport-section .tour-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.esport-section .tour-section h2 {
+  font-family: "Foundry Gridnik W03 ExtraBold";
+  color: white;
+  font-size: 5rem;
+}
+.esport-section .tour-section iframe {
+  margin-bottom: 6rem;
+  height: 31.5rem;
+  width: 56rem;
+}
+.esport-section .tour-section .teams-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  background-color: rgba(145, 134, 134, 0);
+  transform: skew(18rem);
+}
+.esport-section .tour-section .teams-container .emea-logo {
+  width: 15rem;
+  height: 15rem;
+}
+.esport-section .tour-section .teams-container table {
+  border: solid 1px white;
+  border-radius: 1rem;
+  border-collapse: collapse;
+}
+.esport-section .tour-section .teams-container table td {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  transition: 300ms;
+}
+.esport-section .tour-section .teams-container table td img {
+  height: 7rem;
+}
+.esport-section .tour-section .teams-container table td:hover {
+  transform: scale(0.9);
+}
+.esport-section .tour-section .teams-container table th img:nth-child(1) {
+  height: 14rem;
+}
+.esport-section .tour-section .teams-container table .border-bottom {
+  border-bottom: 1px solid white;
+}
+.esport-section .tour-section .teams-container table .space-under > td {
+  padding-bottom: 3rem;
+}
+.esport-section .tour-section .teams-container table .space-above > td {
+  padding-top: 3rem;
+}
+.esport-section .tour-section .teams-container table .space-right {
+  padding-right: 3rem;
+}
+.esport-section .tour-section .teams-container table .space-left {
+  padding-left: 3rem;
+  padding-left: 3rem;
+}
+.esport-section .tour-section .teams-container table th:nth-child(1) {
+  border-right: 1px solid white;
+}
+
+#map-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /*border-top: 1px rgba(255, 255, 255, 0.081) solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.081) solid; */
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(178, 51, 64, 0.15) 22%, rgba(255, 68, 87, 0.15) 50%, rgba(212, 58, 73, 0.118) 74%, rgb(15, 15, 15) 100%);
+}
+#map-section .map-slideshow {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#map-section .map-slideshow .nav-btns {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-right: white solid 1px;
+}
+#map-section .map-slideshow .nav-btns button {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.776);
+  width: 80%;
+  height: 5rem;
+  text-align: left;
+  font-size: 2rem;
+  border-bottom: rgba(255, 255, 255, 0) solid 1px;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  transition: 300ms;
+}
+#map-section .map-slideshow .nav-btns button:hover {
+  color: white;
+  border-bottom: white solid 1px;
+  cursor: pointer;
+}
+#map-section .map-slideshow .nav-btns .btn.active {
+  color: white;
+  border-bottom: white solid 1px;
+}
+#map-section .map-slideshow .maps-holder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#map-section .map-slideshow .map-holder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#map-section .map-slideshow .map {
+  width: 100%;
+  height: 100%;
+  transition: 500ms;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 50% left 0;
+  opacity: 0;
+  margin-left: 3rem;
+}
+#map-section .map-slideshow .map div h2, #map-section .map-slideshow .map div p {
+  padding: 0;
+  margin: 0;
+}
+#map-section .map-slideshow .map.active {
+  opacity: 1;
+  visibility: visible;
+}
+#map-section .map-slideshow .map-01 {
+  background-image: url(maps/Loading_Screen_Ascent.webp);
+}
+#map-section .map-slideshow .map-02 {
+  background-image: url(maps/bind.avif);
+}
+#map-section .map-slideshow .map-03 {
+  background-image: url(maps/split.jpg);
+}
+#map-section .map-slideshow .map-04 {
+  background-image: url(maps/haven.webp);
+}
+#map-section .map-slideshow .map-05 {
+  background-image: url(maps/icebox.png);
+}
+#map-section .map-slideshow .map-06 {
+  background-image: url(maps/breeze.webp);
+}
+#map-section .map-slideshow .map-07 {
+  background-image: url(maps/fracture.webp);
+}
+#map-section .map-slideshow .map-08 {
+  background-image: url(maps/pearl.webp);
+}
+#map-section .map-slideshow .map-09 {
+  background-image: url(maps/lotus.webp);
+}
+#map-section .map-slideshow .map-10 {
+  background-image: url(maps/sunset.png);
+}
+#map-section .map-slideshow .map-11 {
+  background-image: url(maps/abyss.webp);
+}
+
+#agents-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#agents-section .agents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+  gap: 0.1rem;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+  border: solid rgba(255, 255, 255, 0.24) 1px;
+  background-color: rgba(0, 0, 0, 0.141);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#agents-section .agents .pick-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 27%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+#agents-section .agents .pick-section .role-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 10%;
+}
+#agents-section .agents .pick-section .role-holder .role-button {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.122);
+  border: 1px solid rgba(255, 255, 255, 0.551);
+}
+#agents-section .agents .pick-section .role-holder .role-button img {
+  width: 4rem;
+}
+#agents-section .agents .pick-section .role-holder .role-button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+#agents-section .agents .pick-section .agent-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+#agents-section .agents .pick-section .agent-holder .agent-button {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  color: white;
+  font-size: 3rem;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.122);
+  border: 1px solid rgba(255, 255, 255, 0.551);
+}
+#agents-section .agents .pick-section .agent-holder .agent-button img {
+  width: 5rem;
+  height: 5rem;
+}
+#agents-section .agents .pick-section .agent-holder .agent-button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+#agents-section .agents .pick-section .agent-holder .agent-button.active {
+  border: 1px solid white;
+}
+#agents-section .agents .info-holder {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+#agents-section .agents .info-holder .agent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms, visibility 200ms;
+  top: 0;
+  left: 0;
+}
+#agents-section .agents .info-holder .agent.active {
+  opacity: 1;
+  visibility: visible;
+}
+#agents-section .agents .info-holder .__agent-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#agents-section .agents .info-holder .agent-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+#agents-section .agents .info-holder .agent-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#agents-section .agents .info-holder .about-agent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 40%;
+  height: 100%;
+  font-size: 1rem;
+}
+#agents-section .agents .info-holder .about-agent h2 {
+  margin: 0;
+  padding: 0;
+}
+#agents-section .agents .info-holder .about-agent .ability-button {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.8rem;
+  color: white;
+  font-size: 3rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  transition: 200ms ease-in;
+}
+#agents-section .agents .info-holder .about-agent .ability-button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#agents-section .agents .info-holder .about-agent .ability-button:hover {
+  border-top: 1px solid white;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.089) 100%);
+}
+#agents-section .agents .info-holder .about-agent .ability-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+}
+#agents-section .agents .info-holder .about-agent .ability-button.active {
+  border-top: 1px solid white;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.089) 100%);
+}
+#agents-section .agents .info-holder .about-agent .ability-desc-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#agents-section .agents .info-holder .about-agent .ability-desc {
+  position: absolute;
+  transition: 300ms;
+}
+#agents-section .agents .info-holder .about-agent .ability-desc {
+  opacity: 0;
+  transform: translateX(-10rem);
+}
+#agents-section .agents .info-holder .about-agent .ability-desc.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.t-nav i {
+  font-size: 2rem;
+  transition: 300ms;
+}
+.t-nav i:hover {
+  transform: scale(1.2);
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Garet;
+  padding: 6rem;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.team-container * {
+  /*border: 1px solid white; */
+  margin: 0;
+}
+.team-container .team-logo > img {
+  width: 20rem;
+}
+.team-container .flag {
+  width: 2rem;
+}
+
+.team-container > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  width: 50%;
+}
+.team-container > div:nth-child(2) .team-title {
+  font-size: 4rem;
+  font-family: Garet-Heavz;
+}
+.team-container > div:nth-child(2) .t-location {
+  display: flex;
+  margin-left: 3px;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+.team-container > div:nth-child(2) .staff-holder {
+  display: flex;
+  gap: 0.5rem;
+}
+.team-container > div:nth-child(2) .staff-holder div .staff-img {
+  width: 3rem;
+}
+.team-container > div:nth-child(2) .staff-holder div p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.team-container > div:nth-child(2) .staff-holder div > div {
+  display: flex;
+  flex-direction: column;
+}
+.team-container > div:nth-child(2) .staff-holder div > div p:nth-child(2) {
+  color: rgba(255, 255, 255, 0.211);
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 2px;
+}
+.team-container > div:nth-child(2) .staff-holder > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.roster-container {
+  display: flex;
+  justify-content: center;
+}
+.roster-container h2 {
+  font-family: Garet-Heavz;
+}
+
+* {
+  color: white;
+  font-family: Garet;
+}
+
+:root {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #FF4457;
+  color: #0f0f0f;
+}
+
+::selection {
+  background-color: #FF4457;
+  color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF4457;
+}
+
+::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+  overflow-x: hidden;
+}
+
+.blank {
+  width: 5vw;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0 5rem 0;
+}
+footer p {
+  border-top: white solid 1px;
+  padding-top: 3rem;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 1500px) {
+  :root {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

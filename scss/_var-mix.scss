@@ -1,0 +1,35 @@
+@mixin center-all-flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexbox-layout($flex-direction, $justify-content, $align-items, $gap){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@font-face {
+    font-family: Garet;
+    src: url(../font/garet/Garet-Book.ttf);
+}
+
+@font-face {
+    font-family: Garet-Heavz;
+    src: url(../font/garet/Garet-Heavy.ttf);
+}
+
+
+$val-blue: #0f0f0f; 
+$val-red: #FF4457;
+$nav-width: 5vw;
+$unselected: rgba(255, 255, 255, 0.776);
