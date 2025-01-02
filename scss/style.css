@@ -240,14 +240,19 @@ nav .vertical-nav .icons {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   /*border-top: 1px rgba(255, 255, 255, 0.081) solid;
-  border-bottom: 1px rgba(255, 255, 255, 0.081) solid; */
+   border-bottom: 1px rgba(255, 255, 255, 0.081) solid; */
   background: rgb(15, 15, 15);
   background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(178, 51, 64, 0.15) 22%, rgba(255, 68, 87, 0.15) 50%, rgba(212, 58, 73, 0.118) 74%, rgb(15, 15, 15) 100%);
+}
+#map-section h2 {
+  font-size: 2rem;
+  text-align: left;
+  width: 80%;
 }
 #map-section .map-slideshow {
   width: 80%;
@@ -364,6 +369,7 @@ nav .vertical-nav .icons {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin: 5rem 0 5rem 0;
 }
 #agents-section .agents {
   display: flex;
@@ -528,8 +534,8 @@ nav .vertical-nav .icons {
 #agents-section .agents .info-holder .about-agent .ability-button img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #agents-section .agents .info-holder .about-agent .ability-button:hover {
   border-top: 1px solid white;
@@ -562,6 +568,9 @@ nav .vertical-nav .icons {
 #agents-section .agents .info-holder .about-agent .ability-desc.active {
   opacity: 1;
   transform: translateX(0);
+}
+#agents-section .agents .info-holder .about-agent .ability-desc b {
+  text-transform: uppercase;
 }
 
 .t-nav i {
@@ -647,6 +656,15 @@ body > div {
 }
 .roster-container h2 {
   font-family: Garet-Heavz;
+}
+
+.introductiion {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 5rem 0;
 }
 
 * {

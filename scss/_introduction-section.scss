@@ -1,0 +1,5 @@
+.introductiion{
+    @include width-height(100vw, 100vh);
+    @include center-all-flexbox();
+    margin: 5rem 0 5rem 0;
+}

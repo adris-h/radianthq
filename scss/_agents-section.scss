@@ -1,6 +1,7 @@
 #agents-section {
     @include width-height(100vw, 100vh);
     @include flexbox-layout(row, center, center, 1rem);
+    margin: 5rem 0 5rem 0;
 
     .agents {
         @include flexbox-layout(row, center, space-between, .1rem);
@@ -145,7 +146,7 @@
                 .ability-button img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
 
                 .ability-button:hover {
@@ -177,11 +178,16 @@
                     opacity: 0;
                     transform: translateX(-10rem);
                 }
+                
 
                 .ability-desc.active {
                     opacity: 1;
                     transform: translateX(0);
                 }
+                .ability-desc b{
+                    text-transform: uppercase;
+                }
+                
             }
         }
     }
