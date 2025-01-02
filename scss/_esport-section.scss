@@ -36,8 +36,11 @@
 
     .tour-section{
         @include center-all-flexbox();
+        position: relative;
+        margin: 5rem 0 5rem 0;
         flex-direction: column;
         width: 100vw;
+        
         h2{
             font-family: "Foundry Gridnik W03 ExtraBold";
             color: white;
@@ -107,7 +110,15 @@
                 th:nth-child(1){
                     border-right: 1px solid white;
                 }
-              }
+            }
         }
+    }
+
+    .tour-section::after{
+        content: "";
+        position: absolute;
+        border-top: 1px solid $val-red;
+        width: 70%;
+        height: 100%;
     }
 }

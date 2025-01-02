@@ -1,5 +1,16 @@
-.introductiion{
-    @include width-height(100vw, 100vh);
+.introduction{
+    @include width-height(100vw, 80vh);
     @include center-all-flexbox();
-    margin: 5rem 0 5rem 0;
+    flex-direction: column;
+
+    h2{
+        font-size: 3rem;
+        font-family: Foundry Gridnik W03 ExtraBold;
+        margin: 0;
+    }
+
+    p{
+        width: 70%;
+        text-align: center;
+    }
 }

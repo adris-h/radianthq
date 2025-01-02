@@ -169,6 +169,8 @@ nav .vertical-nav .icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin: 5rem 0 5rem 0;
   flex-direction: column;
   width: 100vw;
 }
@@ -234,6 +236,13 @@ nav .vertical-nav .icons {
 }
 .esport-section .tour-section .teams-container table th:nth-child(1) {
   border-right: 1px solid white;
+}
+.esport-section .tour-section::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #FF4457;
+  width: 70%;
+  height: 100%;
 }
 
 #map-section {
@@ -658,13 +667,22 @@ body > div {
   font-family: Garet-Heavz;
 }
 
-.introductiion {
+.introduction {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0 5rem 0;
+  flex-direction: column;
+}
+.introduction h2 {
+  font-size: 3rem;
+  font-family: Foundry Gridnik W03 ExtraBold;
+  margin: 0;
+}
+.introduction p {
+  width: 70%;
+  text-align: center;
 }
 
 * {
