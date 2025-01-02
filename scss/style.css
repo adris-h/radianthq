@@ -139,7 +139,7 @@ nav .vertical-nav .icons {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5rem 0 5rem 0;
+  margin: 20rem 0 5rem 0;
 }
 .esport-section .tournaments-container {
   display: flex;
@@ -148,10 +148,7 @@ nav .vertical-nav .icons {
   gap: 5rem;
   border-radius: 1rem;
   /*border: solid 1px white;*/
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 10rem 2rem 10rem;
 }
 .esport-section .tournaments-container .vct-img {
   width: 16rem;
@@ -242,7 +239,8 @@ nav .vertical-nav .icons {
   position: absolute;
   border-top: 1px solid #FF4457;
   width: 70%;
-  height: 100%;
+  height: 10%;
+  top: 0;
 }
 
 #map-section {
@@ -669,11 +667,12 @@ body > div {
 
 .introduction {
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scroll-margin: 20vh;
 }
 .introduction h2 {
   font-size: 3rem;
@@ -740,5 +739,10 @@ footer p {
 @media only screen and (max-width: 1500px) {
   :root {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

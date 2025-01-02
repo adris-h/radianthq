@@ -2,7 +2,7 @@
     @include center-all-flexbox();
     flex-direction: column;
 
-    margin: 5rem 0 5rem 0;
+    margin: 20rem 0 5rem 0;
 
     .tournaments-container{
         @include center-all-flexbox();
@@ -10,10 +10,8 @@
 
         border-radius: 1rem;
         /*border: solid 1px white;*/
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+
+        padding: 2rem 10rem 2rem 10rem;
 
 
         .vct-img{
@@ -56,9 +54,6 @@
         .teams-container{
             @include flexbox-layout(row, center, center, 1rem);
             width: 60%;
-
-            
-
             .emea-logo{
                 width: 15rem;
                 height: 15rem;
@@ -119,6 +114,7 @@
         position: absolute;
         border-top: 1px solid $val-red;
         width: 70%;
-        height: 100%;
+        height: 10%;
+        top: 0;
     }
 }

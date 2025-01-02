@@ -1,7 +1,8 @@
 .introduction{
-    @include width-height(100vw, 80vh);
+    @include width-height(100vw, 60vh);
     @include center-all-flexbox();
     flex-direction: column;
+    scroll-margin: 20vh;
 
     h2{
         font-size: 3rem;
