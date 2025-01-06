@@ -47,144 +47,132 @@ buttons.forEach((button, index) => {
 const buttonsAbilities = document.querySelectorAll('[class^="ability-button"]');
 
 const abilitiesDesc = [
-    // Jett Abilities
-    document.querySelector('.ability-desc-jett-1'),
-    document.querySelector('.ability-desc-jett-2'),
-    document.querySelector('.ability-desc-jett-3'),
-    document.querySelector('.ability-desc-jett-4'),
 
-    // Sova Abilities
-    document.querySelector('.ability-desc-sova-1'),
-    document.querySelector('.ability-desc-sova-2'),
-    document.querySelector('.ability-desc-sova-3'),
-    document.querySelector('.ability-desc-sova-4'),
-
-    // Phoenix Abilities
-    document.querySelector('.ability-desc-phoenix-1'),
-    document.querySelector('.ability-desc-phoenix-2'),
-    document.querySelector('.ability-desc-phoenix-3'),
-    document.querySelector('.ability-desc-phoenix-4'),
-
-    // Brimstone Abilities
-    document.querySelector('.ability-desc-brimstone-1'),
-    document.querySelector('.ability-desc-brimstone-2'),
-    document.querySelector('.ability-desc-brimstone-3'),
-    document.querySelector('.ability-desc-brimstone-4'),
-
-    // Astra Abilities
     document.querySelector('.ability-desc-astra-1'),
     document.querySelector('.ability-desc-astra-2'),
     document.querySelector('.ability-desc-astra-3'),
     document.querySelector('.ability-desc-astra-4'),
 
-    document.querySelector('.ability-desc-sage-1'),
-    document.querySelector('.ability-desc-sage-2'),
-    document.querySelector('.ability-desc-sage-3'),
-    document.querySelector('.ability-desc-sage-4'),
+    document.querySelector('.ability-desc-breach-1'),
+    document.querySelector('.ability-desc-breach-2'),
+    document.querySelector('.ability-desc-breach-3'),
+    document.querySelector('.ability-desc-breach-4'),
+     // Brimstone Abilities
+    document.querySelector('.ability-desc-brimstone-1'),
+    document.querySelector('.ability-desc-brimstone-2'),
+    document.querySelector('.ability-desc-brimstone-3'),
+    document.querySelector('.ability-desc-brimstone-4'),
 
-    document.querySelector('.ability-desc-killjoy-1'),
-    document.querySelector('.ability-desc-killjoy-2'),
-    document.querySelector('.ability-desc-killjoy-3'),
-    document.querySelector('.ability-desc-killjoy-4'),
+    document.querySelector('.ability-desc-chamber-1'),
+    document.querySelector('.ability-desc-chamber-2'),
+    document.querySelector('.ability-desc-chamber-3'),
+    document.querySelector('.ability-desc-chamber-4'),
 
-    document.querySelector('.ability-desc-reyna-1'),
-    document.querySelector('.ability-desc-reyna-2'),
-    document.querySelector('.ability-desc-reyna-3'),
-    document.querySelector('.ability-desc-reyna-4'),
+    document.querySelector('.ability-desc-clove-1'),
+    document.querySelector('.ability-desc-clove-2'),
+    document.querySelector('.ability-desc-clove-3'),
+    document.querySelector('.ability-desc-clove-4'),
 
     document.querySelector('.ability-desc-cypher-1'),
     document.querySelector('.ability-desc-cypher-2'),
     document.querySelector('.ability-desc-cypher-3'),
     document.querySelector('.ability-desc-cypher-4'),
 
-    document.querySelector('.ability-desc-raze-1'),
-    document.querySelector('.ability-desc-raze-2'),
-    document.querySelector('.ability-desc-raze-3'),
-    document.querySelector('.ability-desc-raze-4'),
+    document.querySelector('.ability-desc-deadlock-1'),
+    document.querySelector('.ability-desc-deadlock-2'),
+    document.querySelector('.ability-desc-deadlock-3'),
+    document.querySelector('.ability-desc-deadlock-4'),
 
-    document.querySelector('.ability-desc-omen-1'),
-    document.querySelector('.ability-desc-omen-2'),
-    document.querySelector('.ability-desc-omen-3'),
-    document.querySelector('.ability-desc-omen-4'),
-
-    // Viper Abilities
-    document.querySelector('.ability-desc-viper-1'),
-    document.querySelector('.ability-desc-viper-2'),
-    document.querySelector('.ability-desc-viper-3'),
-    document.querySelector('.ability-desc-viper-4'),
-
-    // Neon Abilities
-    document.querySelector('.ability-desc-neon-1'),
-    document.querySelector('.ability-desc-neon-2'),
-    document.querySelector('.ability-desc-neon-3'),
-    document.querySelector('.ability-desc-neon-4'),
-
-    // Fade Abilities
     document.querySelector('.ability-desc-fade-1'),
     document.querySelector('.ability-desc-fade-2'),
     document.querySelector('.ability-desc-fade-3'),
     document.querySelector('.ability-desc-fade-4'),
-
-    // Skye Abilities
-    document.querySelector('.ability-desc-skye-1'),
-    document.querySelector('.ability-desc-skye-2'),
-    document.querySelector('.ability-desc-skye-3'),
-    document.querySelector('.ability-desc-skye-4'),
-
-    // Yoru Abilities
-    document.querySelector('.ability-desc-yoru-1'),
-    document.querySelector('.ability-desc-yoru-2'),
-    document.querySelector('.ability-desc-yoru-3'),
-    document.querySelector('.ability-desc-yoru-4'),
-
-    // Chamber Abilities
-    document.querySelector('.ability-desc-chamber-1'),
-    document.querySelector('.ability-desc-chamber-2'),
-    document.querySelector('.ability-desc-chamber-3'),
-    document.querySelector('.ability-desc-chamber-4'),
-
-    // KAY/O Abilities
-    document.querySelector('.ability-desc-kayo-1'),
-    document.querySelector('.ability-desc-kayo-2'),
-    document.querySelector('.ability-desc-kayo-3'),
-    document.querySelector('.ability-desc-kayo-4'),
-
-    document.querySelector('.ability-desc-breach-1'),
-    document.querySelector('.ability-desc-breach-2'),
-    document.querySelector('.ability-desc-breach-3'),
-    document.querySelector('.ability-desc-breach-4'),
-
-    document.querySelector('.ability-desc-vyse-1'),
-    document.querySelector('.ability-desc-vyse-2'),
-    document.querySelector('.ability-desc-vyse-3'),
-    document.querySelector('.ability-desc-vyse-4'),
-
-    document.querySelector('.ability-desc-harbor-1'),
-    document.querySelector('.ability-desc-harbor-2'),
-    document.querySelector('.ability-desc-harbor-3'),
-    document.querySelector('.ability-desc-harbor-4'),
 
     document.querySelector('.ability-desc-gekko-1'),
     document.querySelector('.ability-desc-gekko-2'),
     document.querySelector('.ability-desc-gekko-3'),
     document.querySelector('.ability-desc-gekko-4'),
 
-    document.querySelector('.ability-desc-deadlock-1'),
-    document.querySelector('.ability-desc-deadlock-2'),
-    document.querySelector('.ability-desc-deadlock-3'),
-    document.querySelector('.ability-desc-deadlock-4'),
+    document.querySelector('.ability-desc-harbor-1'),
+    document.querySelector('.ability-desc-harbor-2'),
+    document.querySelector('.ability-desc-harbor-3'),
+    document.querySelector('.ability-desc-harbor-4'),
+
+    document.querySelector('.ability-desc-jett-1'),
+    document.querySelector('.ability-desc-jett-2'),
+    document.querySelector('.ability-desc-jett-3'),
+    document.querySelector('.ability-desc-jett-4'),
 
     document.querySelector('.ability-desc-iso-1'),
     document.querySelector('.ability-desc-iso-2'),
     document.querySelector('.ability-desc-iso-3'),
     document.querySelector('.ability-desc-iso-4'),
 
+    document.querySelector('.ability-desc-kayo-1'),
+    document.querySelector('.ability-desc-kayo-2'),
+    document.querySelector('.ability-desc-kayo-3'),
+    document.querySelector('.ability-desc-kayo-4'),
+
+    document.querySelector('.ability-desc-killjoy-1'),
+    document.querySelector('.ability-desc-killjoy-2'),
+    document.querySelector('.ability-desc-killjoy-3'),
+    document.querySelector('.ability-desc-killjoy-4'),
+
+    document.querySelector('.ability-desc-neon-1'),
+    document.querySelector('.ability-desc-neon-2'),
+    document.querySelector('.ability-desc-neon-3'),
+    document.querySelector('.ability-desc-neon-4'),
+
+    document.querySelector('.ability-desc-omen-1'),
+    document.querySelector('.ability-desc-omen-2'),
+    document.querySelector('.ability-desc-omen-3'),
+    document.querySelector('.ability-desc-omen-4'),
+
+    document.querySelector('.ability-desc-phoenix-1'),
+    document.querySelector('.ability-desc-phoenix-2'),
+    document.querySelector('.ability-desc-phoenix-3'),
+    document.querySelector('.ability-desc-phoenix-4'),
+
+    document.querySelector('.ability-desc-raze-1'),
+    document.querySelector('.ability-desc-raze-2'),
+    document.querySelector('.ability-desc-raze-3'),
+    document.querySelector('.ability-desc-raze-4'),
+
+    document.querySelector('.ability-desc-reyna-1'),
+    document.querySelector('.ability-desc-reyna-2'),
+    document.querySelector('.ability-desc-reyna-3'),
+    document.querySelector('.ability-desc-reyna-4'),
     
-    document.querySelector('.ability-desc-clove-1'),
-    document.querySelector('.ability-desc-clove-2'),
-    document.querySelector('.ability-desc-clove-3'),
-    document.querySelector('.ability-desc-clove-4'),
+    document.querySelector('.ability-desc-sage-1'),
+    document.querySelector('.ability-desc-sage-2'),
+    document.querySelector('.ability-desc-sage-3'),
+    document.querySelector('.ability-desc-sage-4'),
+
+    document.querySelector('.ability-desc-skye-1'),
+    document.querySelector('.ability-desc-skye-2'),
+    document.querySelector('.ability-desc-skye-3'),
+    document.querySelector('.ability-desc-skye-4'),
+
+    document.querySelector('.ability-desc-sova-1'),
+    document.querySelector('.ability-desc-sova-2'),
+    document.querySelector('.ability-desc-sova-3'),
+    document.querySelector('.ability-desc-sova-4'),
+
+    document.querySelector('.ability-desc-viper-1'),
+    document.querySelector('.ability-desc-viper-2'),
+    document.querySelector('.ability-desc-viper-3'),
+    document.querySelector('.ability-desc-viper-4'),
+
+    document.querySelector('.ability-desc-vyse-1'),
+    document.querySelector('.ability-desc-vyse-2'),
+    document.querySelector('.ability-desc-vyse-3'),
+    document.querySelector('.ability-desc-vyse-4'),
     
+    document.querySelector('.ability-desc-yoru-1'),
+    document.querySelector('.ability-desc-yoru-2'),
+    document.querySelector('.ability-desc-yoru-3'),
+    document.querySelector('.ability-desc-yoru-4'),
+
 
 
 ];

@@ -1,103 +1,162 @@
-.t-nav{
-    i{
-        font-size: 2rem;
-        transition: 300ms;
-    }
-    i:hover{
-        transform: scale(1.2);
-    }
-}
-
-body>div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-family: Garet;
-    padding: 6rem;
-}
-
-.team-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    *{
-        /*border: 1px solid white; */
-        margin: 0;
-    }
-
-    .team-logo>img{
-        width: 20rem;
-    }
-
-    .flag{
-        width: 2rem;
-    }
-
-}
-
-.team-container>div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 3rem;
-    width: 50%;
-
-    .team-title{
-        font-size: 4rem;
-        font-family: Garet-Heavz;
-    }
-
-    .t-location{
-        display: flex;
-        margin-left: 3px;
-        gap: .5rem;
-        font-size: 1.5rem;
-    }
-
-    .staff-holder{
-        display: flex;
-        gap: .5rem;
-        div{
-
-            .staff-img{
-                width: 3rem;
+body.g-body{
+    margin-bottom: 10rem;
+    
+    
+    nav{
+        div div{
+            a{
+                transition: 200ms;
+                img{
+                    width: 1.5rem;
+                    opacity: .8;
+                }
             }
-        
-            p{
-                margin: 0;
-                font-size: 1.5rem;
+    
+            a:hover img{
+                opacity: 1;
             }
         }
+    }
 
-        div>div{
+    *{
+        //border: red 1px solid;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .guide-intro{
+            width: 60%;
+            height: 100vh;
+            padding: 0 10rem 0 10rem;
             display: flex;
             flex-direction: column;
-
-            p:nth-child(2){
-                color: rgba(255, 255, 255, 0.211);
-                font-size: 1rem;
-                border-radius: 5px;
-                padding: 2px;
+            justify-content: center;
+            align-items: center;
+            .role-overview-container{
+                width: 20%;
             }
         }
-    }
-
-    .staff-holder>div{
-        display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: .5rem;
-    }
+        
+        .role-guide{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 100vh;
+            border-bottom: white solid 1px;
+        
+            .p-img-container{
+                display: flex;
+                
+                width: 100%;
+                .p-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60%;
+                    p{
+                        border: rgba(255, 255, 255, 0.49) 1px solid;
+                        
+                    }
+                    p{
+                        text-align: center;
+                        bottom: 0;
+                        width: 80%;
+                        padding: 2rem;
+                        border-radius: 40px;
+                    }
+                }
+            
+                .img-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    height: 50%;
+                    img{
+                        width: 15rem;
+                    }
+                    .sova-drone{
+                        width: 20rem;
+                    }
+                }
+            }
+        
+            ul{
+                width: 94%;
+                padding: 0;
+                margin: 0;
+                h2{
+                    font-size: 2rem;
+                    font-family: Handwritten;
+                    margin-bottom: 1rem;
+                    text-decoration-line: underline;
+                    text-decoration-style: wavy;
+                }
+                li{
+                    font-family: Handwritten;
+                    border-bottom: #ff44577a 1px solid;
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 6px;
+                    
+                    font-size: 2rem;
+            
+                    i{
+                        font-size: .5rem;
+                    }
+                }
+            }
+        
+            
+        }
+        
+        #pros-to-watch{
+            margin-top: 8rem;
+            width: 60%;
+        
+            h2{
+                font-size: 3rem ;
+                margin: 0;
+                border-bottom: $val-red solid 1px;
+                width: 43%;
+            }
+            .pros-container{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                gap: 2rem;
+        
+                width: 100%;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    h3{
+                        text-transform: uppercase;
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+                    a{
+                        font-size: 1.5rem;
+                        transition: 300ms;
+                    }
+                    a:hover{
+                        color: $val-red;
+                    }
+                }
+            }
+        }
+    }    
 }
-
-.roster-container{
-    display: flex;
-    justify-content: center;
-    h2{
-        font-family: Garet-Heavz;
-    }
-}
-
-
 

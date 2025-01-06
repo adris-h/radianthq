@@ -1,6 +1,8 @@
+
 .introduction{
     @include width-height(100vw, 60vh);
     @include center-all-flexbox();
+    position: relative;
     flex-direction: column;
     scroll-margin: 20vh;
 
@@ -14,4 +16,42 @@
         width: 70%;
         text-align: center;
     }
+    .chibi{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        translate: 13.5rem 13.5rem;
+    }
+
+    .handwriting{
+        position: absolute;
+        transform: rotate(-35deg);
+        translate: 10rem 10rem;
+        font-family: Handwritten;
+        font-size: 1.2rem;
+    }
+
+    a{
+        width: 15%;
+        
+
+        button{
+            cursor: pointer;
+            height: 3rem;
+            width: 100%;
+            font-size: 1.5rem;
+            font-family: Foundry Gridnik W03 ExtraBold;
+            background-color: $val-red;
+            color: $val-blue;
+            border-radius: 5px;
+            border-style: none;
+
+            transition: 200ms;
+        }
+        button:hover{
+            box-shadow: 0 0 15px $val-red;
+        }
+    }
+
+    
 }

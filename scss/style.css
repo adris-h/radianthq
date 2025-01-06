@@ -12,22 +12,26 @@
   font-family: Garet-Heavz;
   src: url(../font/garet/Garet-Heavy.ttf);
 }
-nav {
+@font-face {
+  font-family: Handwritten;
+  src: url(../font/Handwriting.ttf);
+}
+.main-nav {
   position: fixed;
   margin: 1rem;
   z-index: 1000;
 }
-nav a {
+.main-nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.808);
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
 }
-nav a i {
+.main-nav a i {
   margin-right: 5px;
 }
-nav .vertical-nav {
+.main-nav .vertical-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,20 +45,20 @@ nav .vertical-nav {
   padding-bottom: 1rem;
   border-right: 1px rgba(255, 255, 255, 0.034) solid;
 }
-nav .vertical-nav .logo img {
+.main-nav .vertical-nav .logo img {
   width: 2rem;
   height: 2rem;
 }
-nav .vertical-nav i {
+.main-nav .vertical-nav i {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.776);
   transition: 500ms;
 }
-nav .vertical-nav i:hover {
+.main-nav .vertical-nav i:hover {
   color: white;
   transform: scale(1.2);
 }
-nav .vertical-nav .icons {
+.main-nav .vertical-nav .icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -580,89 +584,138 @@ nav .vertical-nav .icons {
   text-transform: uppercase;
 }
 
-.t-nav i {
-  font-size: 2rem;
-  transition: 300ms;
+body.g-body {
+  margin-bottom: 10rem;
 }
-.t-nav i:hover {
-  transform: scale(1.2);
+body.g-body nav div div a {
+  transition: 200ms;
 }
-
-body > div {
+body.g-body nav div div a img {
+  width: 1.5rem;
+  opacity: 0.8;
+}
+body.g-body nav div div a:hover img {
+  opacity: 1;
+}
+body.g-body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body.g-body section .guide-intro {
+  width: 60%;
+  height: 100vh;
+  padding: 0 10rem 0 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Garet;
-  padding: 6rem;
+  align-items: center;
 }
-
-.team-container {
+body.g-body section .guide-intro .role-overview-container {
+  width: 20%;
+}
+body.g-body section .role-guide {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  border-bottom: white solid 1px;
 }
-.team-container * {
-  /*border: 1px solid white; */
-  margin: 0;
+body.g-body section .role-guide .p-img-container {
+  display: flex;
+  width: 100%;
 }
-.team-container .team-logo > img {
+body.g-body section .role-guide .p-img-container .p-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+body.g-body section .role-guide .p-img-container .p-container p {
+  border: rgba(255, 255, 255, 0.49) 1px solid;
+}
+body.g-body section .role-guide .p-img-container .p-container p {
+  text-align: center;
+  bottom: 0;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 40px;
+}
+body.g-body section .role-guide .p-img-container .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50%;
+}
+body.g-body section .role-guide .p-img-container .img-container img {
+  width: 15rem;
+}
+body.g-body section .role-guide .p-img-container .img-container .sova-drone {
   width: 20rem;
 }
-.team-container .flag {
-  width: 2rem;
-}
-
-.team-container > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 3rem;
-  width: 50%;
-}
-.team-container > div:nth-child(2) .team-title {
-  font-size: 4rem;
-  font-family: Garet-Heavz;
-}
-.team-container > div:nth-child(2) .t-location {
-  display: flex;
-  margin-left: 3px;
-  gap: 0.5rem;
-  font-size: 1.5rem;
-}
-.team-container > div:nth-child(2) .staff-holder {
-  display: flex;
-  gap: 0.5rem;
-}
-.team-container > div:nth-child(2) .staff-holder div .staff-img {
-  width: 3rem;
-}
-.team-container > div:nth-child(2) .staff-holder div p {
+body.g-body section .role-guide ul {
+  width: 94%;
+  padding: 0;
   margin: 0;
-  font-size: 1.5rem;
 }
-.team-container > div:nth-child(2) .staff-holder div > div {
-  display: flex;
-  flex-direction: column;
+body.g-body section .role-guide ul h2 {
+  font-size: 2rem;
+  font-family: Handwritten;
+  margin-bottom: 1rem;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
-.team-container > div:nth-child(2) .staff-holder div > div p:nth-child(2) {
-  color: rgba(255, 255, 255, 0.211);
-  font-size: 1rem;
-  border-radius: 5px;
-  padding: 2px;
-}
-.team-container > div:nth-child(2) .staff-holder > div {
+body.g-body section .role-guide ul li {
+  font-family: Handwritten;
+  border-bottom: rgba(255, 68, 87, 0.4784313725) 1px solid;
+  list-style: none;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 6px;
+  font-size: 2rem;
 }
-
-.roster-container {
+body.g-body section .role-guide ul li i {
+  font-size: 0.5rem;
+}
+body.g-body section #pros-to-watch {
+  margin-top: 8rem;
+  width: 60%;
+}
+body.g-body section #pros-to-watch h2 {
+  font-size: 3rem;
+  margin: 0;
+  border-bottom: #FF4457 solid 1px;
+  width: 43%;
+}
+body.g-body section #pros-to-watch .pros-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+body.g-body section #pros-to-watch .pros-container div {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.roster-container h2 {
-  font-family: Garet-Heavz;
+body.g-body section #pros-to-watch .pros-container div h3 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2rem;
+}
+body.g-body section #pros-to-watch .pros-container div a {
+  font-size: 1.5rem;
+  transition: 300ms;
+}
+body.g-body section #pros-to-watch .pros-container div a:hover {
+  color: #FF4457;
 }
 
 .introduction {
@@ -671,6 +724,7 @@ body > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-direction: column;
   scroll-margin: 20vh;
 }
@@ -682,6 +736,37 @@ body > div {
 .introduction p {
   width: 70%;
   text-align: center;
+}
+.introduction .chibi {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  translate: 13.5rem 13.5rem;
+}
+.introduction .handwriting {
+  position: absolute;
+  transform: rotate(-35deg);
+  translate: 10rem 10rem;
+  font-family: Handwritten;
+  font-size: 1.2rem;
+}
+.introduction a {
+  width: 15%;
+}
+.introduction a button {
+  cursor: pointer;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: Foundry Gridnik W03 ExtraBold;
+  background-color: #FF4457;
+  color: #0f0f0f;
+  border-radius: 5px;
+  border-style: none;
+  transition: 200ms;
+}
+.introduction a button:hover {
+  box-shadow: 0 0 15px #FF4457;
 }
 
 * {
