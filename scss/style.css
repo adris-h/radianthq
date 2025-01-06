@@ -318,23 +318,44 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 #map-section .map-slideshow .map {
   width: 100%;
   height: 100%;
+  visibility: hidden;
   transition: 500ms;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 50% left 0;
   opacity: 0;
   margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 80%;
 }
-#map-section .map-slideshow .map div h2, #map-section .map-slideshow .map div p {
-  padding: 0;
-  margin: 0;
+#map-section .map-slideshow .map .map-desc {
+  transition: 300ms;
+  opacity: 0;
+}
+#map-section .map-slideshow .map .map-desc p {
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.53);
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  padding: 10px;
+}
+#map-section .map-slideshow .map:hover {
+  filter: greyscale(100%);
+}
+#map-section .map-slideshow .map:hover .map-desc {
+  opacity: 1;
 }
 #map-section .map-slideshow .map.active {
+  z-index: 1999;
   opacity: 1;
   visibility: visible;
 }
@@ -586,6 +607,10 @@
 
 body.g-body {
   margin-bottom: 10rem;
+  background-color: rgb(15, 15, 15);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.061) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -19px -19px;
 }
 body.g-body nav div div a {
   transition: 200ms;

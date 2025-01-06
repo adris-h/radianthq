@@ -56,29 +56,51 @@
          @include width-height(100%, 100%);
          display: flex;
          flex-direction: column;
+         justify-content: center;
          gap: 1rem;
          
       }
          .map{
             @include width-height(100%, 100%);
+            visibility: hidden;
             transition: 500ms;
             background-repeat: no-repeat;
             background-size: contain;
             background-position: top 50% left 0;
             opacity: 0;
             margin-left: 3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            height: 80%;
 
-            div{
-               h2, p{
-                  padding: 0;
-                  margin: 0;
+            .map-desc{
+               transition: 300ms;
+               opacity: 0;
+
+               p{
+                  text-shadow: 1px 1px 1px black;
+                  background-color: rgba(0, 0, 0, 0.53);
+                  margin-left: 2rem;
+                  margin-bottom: 3rem;
+                  margin-right: 2rem;
+                  padding: 10px;
+
                }
+            }
+         }
+
+         .map:hover{
+            filter: greyscale(100%);
+            .map-desc{
+               opacity: 1;
             }
          }
 
          
          .map.active
          {
+            z-index: 1999;
             opacity: 1;
             visibility: visible;
          }

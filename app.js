@@ -1,4 +1,4 @@
-// Create an array of button elements by selecting elements with classes "btn-01" to "btn-11".
+
 const buttons = [
     document.querySelector(".btn-01"),
     document.querySelector(".btn-02"),
@@ -13,7 +13,7 @@ const buttons = [
     document.querySelector(".btn-11"),
 ];
 
-// Create an array of map elements by selecting elements with classes "map-01" to "map-11".
+
 const maps = [
     document.querySelector(".map-01"),
     document.querySelector(".map-02"),
