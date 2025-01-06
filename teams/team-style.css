@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Garet;
+  src: url(../font/garet/Garet-Book.ttf);
+}
+@font-face {
+  font-family: Garet-Heavz;
+  src: url(../font/garet/Garet-Heavy.ttf);
+}
+@font-face {
+  font-family: Handwritten;
+  src: url(../font/Handwriting.ttf);
+}
+body {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  margin: 0;
+  font-family: Garet;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 5rem 0;
+}
+body header .team-logo {
+  width: 25rem;
+  height: 25rem;
+}
+body header .team-logo img {
+  width: 100%;
+  transform: scale(1.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body header i {
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+  color: #FF4457;
+}
+body header h1 {
+  margin: 0;
+}
+body h1 {
+  text-transform: uppercase;
+}
+body nav {
+  position: fixed;
+  margin: 2%;
+  z-index: 1000;
+  top: 0;
+  color: white;
+}
+body nav img {
+  width: 2rem;
+}
+
+.roster {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.roster .player {
+  border: rgba(255, 255, 255, 0.696) solid 1px;
+  width: 33.1%;
+  position: relative;
+}
+.roster .player .p-flag {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 4rem;
+  height: 2.7rem;
+}
+.roster .player .p-flag img {
+  border: white solid 0.5px;
+  width: 100%;
+  height: 100%;
+}
+.roster .player .p-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.roster .player .p-image img {
+  width: 100%;
+}
+.roster .player .p-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: rgba(255, 255, 255, 0.696) solid 1px;
+  padding: 1rem;
+}
+.roster .player .p-info h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.roster .player .p-info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.roster .player .p-info span p {
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.roster .player .p-info span a {
+  color: white;
+}
+.roster .player .p-info span a:hover {
+  color: #FF4457;
+}/*# sourceMappingURL=team-style.css.map */

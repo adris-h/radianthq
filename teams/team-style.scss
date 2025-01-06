@@ -1,0 +1,128 @@
+@import "../scss/_var-mix";
+
+body{
+    background-color: rgb(15,15,15);
+    color: white;
+    margin: 0;
+    font-family: Garet;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0 5rem 0;
+        
+            .team-logo{
+                width: 25rem;
+                height: 25rem;
+                img{
+                width: 100%;
+                transform: scale(1.25);
+                object-fit: cover;
+                }   
+            }
+            i{
+                margin-right: .5rem;
+                margin-left: .2rem;
+                color: $val-red;
+            }
+            h1{
+                margin: 0;
+            }
+        }
+
+        h1{
+            text-transform: uppercase;
+        }
+
+        
+nav{
+    position: fixed;
+    margin: 2%;
+    z-index: 1000;
+    top: 0;
+    color: white;
+
+    img{
+        width: 2rem;
+    }
+
+}
+
+        
+    }
+
+    .roster{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100vw;
+        
+
+        .player{
+            border: rgba(255, 255, 255, 0.696) solid 1px;
+            width: 33.1%;
+            position: relative;
+
+            .p-flag{
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+                width: 4rem;
+                height: 2.7rem;
+                
+                img{
+                    border: white solid .5px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            .p-image{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .p-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-top: rgba(255, 255, 255, 0.696) solid 1px;
+                padding: 1rem;
+
+
+                h2{
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    p{
+                        margin: 1rem;
+                        text-transform: uppercase;
+                    }
+                    a{
+                        color: white;
+                    }
+                    a:hover{
+                        color: $val-red;
+                    }
+                }
+            }
+        }
+    }
+
+
+
