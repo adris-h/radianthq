@@ -45,7 +45,7 @@ body.g-body{
             align-items: center;
             width: 60%;
             height: 100vh;
-            border-bottom: white solid 1px;
+            
         
             .p-img-container{
                 display: flex;
@@ -114,6 +114,10 @@ body.g-body{
         
             
         }
+
+        .role-guide:not(#sentinel){
+            border-bottom: white solid 1px;
+        }
         
         #pros-to-watch{
             margin-top: 8rem;
@@ -123,7 +127,7 @@ body.g-body{
                 font-size: 3rem ;
                 margin: 0;
                 border-bottom: $val-red solid 1px;
-                width: 50%;
+                width: 100%;
             }
             .pros-container{
                 display: flex;
